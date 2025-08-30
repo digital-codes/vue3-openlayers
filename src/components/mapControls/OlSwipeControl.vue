@@ -11,7 +11,8 @@ import type { CommonEvents } from "@/composables";
 
 // TODO: what's the point of layerList?
 type Props = Options & {
-  layerList?: Layer[];
+  layers?: Layer[];
+  rightLayers?: Layer[];
 };
 const props = withDefaults(defineProps<Props>(), {
   className: "ol-swipe",
@@ -27,9 +28,6 @@ const properties = usePropsAsObjectProperties(props);
 
 const { control } = useControl(Swipe, properties, attrs, ["moving"]);
 
-props.layerList?.forEach((layer, index) => {
-  control.value.addLayer(layer, index === 1);
-});
 defineExpose({
   control,
 });
