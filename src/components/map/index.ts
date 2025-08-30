@@ -1,19 +1,20 @@
 import type { App } from "vue";
 import OlFeature from "./OlFeature.vue";
-import OlGeolocation from "./OlGeolocation.vue";
+import OlGeoLocation from "./OlGeoLocation.vue";
 import OlMap from "./OlMap.vue";
 import OlOverlay from "./OlOverlay.vue";
 import OlProjectionRegister from "./OlProjectionRegister.vue";
 import OlView from "./OlView.vue";
 import type { Vue3OpenlayersGlobalOptions } from "@/types";
+import { registerWithAliases } from "../registerWithAliases";
 
 function install(app: App, options?: Vue3OpenlayersGlobalOptions) {
-  app.component("OlFeature", OlFeature);
-  app.component("OlGeolocation", OlGeolocation);
-  app.component("OlMap", OlMap);
-  app.component("OlOverlay", OlOverlay);
-  app.component("OlProjectionRegister", OlProjectionRegister);
-  app.component("OlView", OlView);
+  registerWithAliases(app, "OlFeature", OlFeature);
+  registerWithAliases(app, "OlGeoLocation", OlGeoLocation);
+  registerWithAliases(app, "OlMap", OlMap);
+  registerWithAliases(app, "OlOverlay", OlOverlay);
+  registerWithAliases(app, "OlProjectionRegister", OlProjectionRegister);
+  registerWithAliases(app, "OlView", OlView);
 
   if (options) {
     app.provide("ol-options", options);
@@ -29,7 +30,7 @@ export default install;
 export {
   install,
   OlFeature,
-  OlGeolocation,
+  OlGeoLocation,
   OlMap,
   OlOverlay,
   OlProjectionRegister,

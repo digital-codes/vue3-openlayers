@@ -2,6 +2,7 @@
   "name": "vue3-openlayers",
   "version": "11.6.2",
   "description": "OpenLayers Wrapper for Vue3",
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MelihAltintas/vue3-openlayers.git"
@@ -27,22 +28,123 @@
   "license": "MIT",
   "private": false,
   "type": "module",
-  "types": "./dist/index.d.ts",
-  "main": "./dist/vue3-openlayers.umd.cjs",
-  "module": "./dist/vue3-openlayers.js",
+  "main": "./dist/vue3-openlayers.cjs.js",
+  "module": "./dist/vue3-openlayers.es.js",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/vue3-openlayers.js",
-      "require": "./dist/vue3-openlayers.umd.cjs"
+      "import": "./dist/vue3-openlayers.es.js",
+      "require": "./dist/vue3-openlayers.cjs.js",
+      "types": "./dist/types/index.d.ts"
     },
-    "./dist/vue3-openlayers.css": {
-      "import": "./dist/styles.css",
-      "require": "./dist/styles.css"
+    "./animations": {
+      "import": "./dist/esm/animations/index.js",
+      "require": "./dist/cjs/animations/index.js",
+      "types": "./dist/types/components/animations/index.d.ts"
     },
-    "./styles.css": {
-      "import": "./dist/styles.css",
-      "require": "./dist/styles.css"
+    "./animations/*": {
+      "import": "./dist/esm/animations/*.js",
+      "require": "./dist/cjs/animations/*.js",
+      "types": "./dist/types/components/animations/*.d.ts"
+    },
+    "./composables": {
+      "import": "./dist/esm/composables/index.js",
+      "require": "./dist/cjs/composables/index.js",
+      "types": "./dist/types/composables/index.d.ts"
+    },
+    "./composables/*": {
+      "import": "./dist/esm/composables/*.js",
+      "require": "./dist/cjs/composables/*.js",
+      "types": "./dist/types/composables/*.d.ts"
+    },
+    "./controls": {
+      "import": "./dist/esm/controls/index.js",
+      "require": "./dist/cjs/controls/index.js",
+      "types": "./dist/types/components/controls/index.d.ts"
+    },
+    "./controls/*": {
+      "import": "./dist/esm/controls/*.js",
+      "require": "./dist/cjs/controls/*.js",
+      "types": "./dist/types/components/controls/*.d.ts"
+    },
+    "./geometries": {
+      "import": "./dist/esm/geometries/index.js",
+      "require": "./dist/cjs/geometries/index.js",
+      "types": "./dist/types/components/geometries/index.d.ts"
+    },
+    "./geometries/*": {
+      "import": "./dist/esm/geometries/*.js",
+      "require": "./dist/cjs/geometries/*.js",
+      "types": "./dist/types/components/geometries/*.d.ts"
+    },
+    "./helpers": {
+      "import": "./dist/esm/helpers/index.js",
+      "require": "./dist/cjs/helpers/index.js",
+      "types": "./dist/types/helpers/index.d.ts"
+    },
+    "./helpers/*": {
+      "import": "./dist/esm/helpers/*.js",
+      "require": "./dist/cjs/helpers/*.js",
+      "types": "./dist/types/helpers/*.d.ts"
+    },
+    "./interactions": {
+      "import": "./dist/esm/interactions/index.js",
+      "require": "./dist/cjs/interactions/index.js",
+      "types": "./dist/types/components/interactions/index.d.ts"
+    },
+    "./interactions/*": {
+      "import": "./dist/esm/interactions/*.js",
+      "require": "./dist/cjs/interactions/*.js",
+      "types": "./dist/types/components/interactions/*.d.ts"
+    },
+    "./layers": {
+      "import": "./dist/esm/layers/index.js",
+      "require": "./dist/cjs/layers/index.js",
+      "types": "./dist/types/components/layers/index.d.ts"
+    },
+    "./layers/*": {
+      "import": "./dist/esm/layers/*.js",
+      "require": "./dist/cjs/layers/*.js",
+      "types": "./dist/types/components/layers/*.d.ts"
+    },
+    "./map": {
+      "import": "./dist/esm/map/index.js",
+      "require": "./dist/cjs/map/index.js",
+      "types": "./dist/types/components/map/index.d.ts"
+    },
+    "./map/*": {
+      "import": "./dist/esm/map/*.js",
+      "require": "./dist/cjs/map/*.js",
+      "types": "./dist/types/components/map/*.d.ts"
+    },
+    "./styles": {
+      "import": "./dist/esm/styles/index.js",
+      "require": "./dist/cjs/styles/index.js",
+      "types": "./dist/types/components/styles/index.d.ts"
+    },
+    "./styles/*": {
+      "import": "./dist/esm/styles/*.js",
+      "require": "./dist/cjs/styles/*.js",
+      "types": "./dist/types/components/styles/*.d.ts"
+    },
+    "./sources": {
+      "import": "./dist/esm/sources/index.js",
+      "require": "./dist/cjs/sources/index.js",
+      "types": "./dist/types/components/sources/index.d.ts"
+    },
+    "./sources/*": {
+      "import": "./dist/esm/sources/*.js",
+      "require": "./dist/cjs/sources/*.js",
+      "types": "./dist/types/components/sources/*.d.ts"
+    },
+    "./*": {
+      "import": "./dist/esm/*.js",
+      "require": "./dist/cjs/*.js",
+      "types": "./dist/types/*.d.ts"
+    },
+    "./vue3-openlayers.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "files": [
@@ -53,6 +155,10 @@
   },
   "scripts": {
     "build": "vite build",
+    "build:split": "vite build --config vite.split.config.ts",
+    "build:umd": "vite build --config vite.umd.config.ts",
+    "build:all": "rm -rf dist && npm run build && npm run build:umd && npm run build:split",
+    "build:analyze:all": "rm -rf dist && VITE_ANALYZE=true npm run build && VITE_ANALYZE=true npm run build:umd && VITE_ANALYZE=true npm run build:split",
     "serve": "npm run docs:dev",
     "docs:dev": "vitepress dev docs",
     "docs:dev:debug": "VITE_DEBUG=true npm run docs:dev",
@@ -86,7 +192,7 @@
     "ol-contextmenu": "^5.4.0",
     "ol-ext": "^4.0.21",
     "proj4": "^2.11.0",
-    "vue": "^3.4.35"
+    "vue": "^3.4.0"
   },
   "peerDependencies": {
     "ol": "^10.0.0",
@@ -127,6 +233,7 @@
     "npm-keyword": "^8.0.0",
     "prettier": "^3.3.3",
     "release-it": "^17.6.0",
+    "rollup-plugin-visualizer": "^5.14.0",
     "typescript": "~5.5.4",
     "vite": "^5.3.5",
     "vite-plugin-dts": "^3.9.1",

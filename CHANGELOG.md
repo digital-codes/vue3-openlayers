@@ -1,4 +1,47 @@
 
+## [12.0.0](https://github.com/MelihAltintas/vue3-openlayers/compare/v11.6.2...v12.0.0) (2025-08-27)
+
+### Breaking Changes & Improvements
+  - Full tree-shaking support: you can now import only the modules you need, reducing bundle size.
+    New import syntax examples:
+    ```js
+    // Import a single component
+    import { OlMap } from "vue3-openlayers/map";
+    import { OlTileLayer } from "vue3-openlayers/layers";
+    import { OlSourceOSM } from "vue3-openlayers/sources";
+    import { OlFullScreenControl } from "vue3-openlayers/controls";
+    import { OlStyle } from "vue3-openlayers/styles";
+    ```
+  - Component renaming for consistency: many components have been renamed to use consistent PascalCase naming. All imports and usage are now case-sensitive. For example:
+    - `OlSourceOSM` (not `OlSourceOsm`)
+    - `OlSourceWMTS` (not `OlSourceWmts`)
+    - `OlLayerSwitcherControl` (not `OlLayerSwitchercontrol`)
+    - `OlLayerSwitcherImageControl` (not `OlLayerSwitcherimageControl`)
+    - `OlSourceBingMaps` (not `OlSourceBingmaps`)
+    - `OlSourceGeoTIFF` (not `OlSourceGeoTiff`)
+    - `OlSourceTileJSON` (not `OlSourceTileJson`)
+    - `OlSourceTileWMS` (not `OlSourceTileWms`)
+    - `OlSourceXYZ` (not `OlSourceXyz`)
+    - `OlInteractionClusterSelect` (not `OlInteractionClusterselect`)
+    - `OlInteractionDragBox` (not `OlInteractionDragbox`)
+    - `OlInteractionDragRotate` (not `OlInteractionDragrotate`)
+    - `OlInteractionDragRotateAndZoom` (not `OlInteractionDragrotatezoom`)
+    - And more, please see the release diff using the GitHub release diff.
+  - Styles are no longer automatically imported.
+  - How to migrate:
+    - Update all imports to use the new subpath and PascalCase names.
+    - Review your code for any case mismatches in component names.
+    - Import styles from both openlayers and vue3-openlayers packages where appropriate:
+    ```js
+    import 'ol/ol.css';
+    import 'vue3-openlayers/vue3-openlayers.css';
+    ```
+
+### Other Changes
+  - Internal refactoring for better modularity and future maintenance.
+  - Documentation and examples updated to reflect new import patterns.
+
+
 
 ## [11.6.2](https://github.com/MelihAltintas/vue3-openlayers/compare/v11.6.1...v11.6.2) (2025-06-05)
 

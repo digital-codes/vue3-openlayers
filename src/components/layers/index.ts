@@ -4,7 +4,7 @@ import {
 } from "./LayersCommonProps";
 
 import type { App } from "vue";
-import OlAnimatedClusterlayer from "./OlAnimatedClusterlayer.vue";
+import OlAnimatedClusterLayer from "./OlAnimatedClusterLayer.vue";
 import OlHeatmapLayer from "./OlHeatmapLayer.vue";
 import OlImageLayer from "./OlImageLayer.vue";
 import OlLayerGroup from "./OlLayerGroup.vue";
@@ -16,18 +16,19 @@ import OlWebglTileLayer from "./OlWebglTileLayer.vue";
 import OlWebglVectorLayer from "./OlWebglVectorLayer.vue";
 import type { Vue3OpenlayersGlobalOptions } from "@/types";
 import type { LayersCommonProps } from "./LayersCommonProps";
+import { registerWithAliases } from "../registerWithAliases";
 
 function install(app: App, options?: Vue3OpenlayersGlobalOptions) {
-  app.component("OlAnimatedClusterlayer", OlAnimatedClusterlayer);
-  app.component("OlHeatmapLayer", OlHeatmapLayer);
-  app.component("OlImageLayer", OlImageLayer);
-  app.component("OlLayerGroup", OlLayerGroup);
-  app.component("OlTileLayer", OlTileLayer);
-  app.component("OlVectorImageLayer", OlVectorImageLayer);
-  app.component("OlVectorLayer", OlVectorLayer);
-  app.component("OlVectorTileLayer", OlVectorTileLayer);
-  app.component("OlWebglTileLayer", OlWebglTileLayer);
-  app.component("OlWebglVectorLayer", OlWebglVectorLayer);
+  registerWithAliases(app, "OlAnimatedClusterLayer", OlAnimatedClusterLayer);
+  registerWithAliases(app, "OlHeatmapLayer", OlHeatmapLayer);
+  registerWithAliases(app, "OlImageLayer", OlImageLayer);
+  registerWithAliases(app, "OlLayerGroup", OlLayerGroup);
+  registerWithAliases(app, "OlTileLayer", OlTileLayer);
+  registerWithAliases(app, "OlVectorImageLayer", OlVectorImageLayer);
+  registerWithAliases(app, "OlVectorLayer", OlVectorLayer);
+  registerWithAliases(app, "OlVectorTileLayer", OlVectorTileLayer);
+  registerWithAliases(app, "OlWebglTileLayer", OlWebglTileLayer);
+  registerWithAliases(app, "OlWebglVectorLayer", OlWebglVectorLayer);
 
   if (options) {
     app.provide("ol-options", options);
@@ -42,7 +43,7 @@ export default install;
 
 export {
   install,
-  OlAnimatedClusterlayer,
+  OlAnimatedClusterLayer,
   OlHeatmapLayer,
   OlImageLayer,
   OlLayerGroup,

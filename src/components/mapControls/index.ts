@@ -3,47 +3,52 @@ import OlAttributionControl from "./OlAttributionControl.vue";
 import OlButtonControl from "./OlButtonControl.vue";
 import OlContextMenuControl from "./OlContextMenuControl.vue";
 import OlControlBar from "./OlControlBar.vue";
-import OlFullscreenControl from "./OlFullscreenControl.vue";
-import OlLayerswitcherControl from "./OlLayerswitcherControl.vue";
-import OlLayerswitcherimageControl from "./OlLayerswitcherimageControl.vue";
-import OlMousepositionControl from "./OlMousepositionControl.vue";
-import OlOverviewmapControl from "./OlOverviewmapControl.vue";
-import OlPrintdialogControl from "./OlPrintdialogControl.vue";
+import OlFullScreenControl from "./OlFullScreenControl.vue";
+import OlLayerSwitcherControl from "./OlLayerSwitcherControl.vue";
+import OlLayerSwitcherImageControl from "./OlLayerSwitcherImageControl.vue";
+import OlMousePositionControl from "./OlMousePositionControl.vue";
+import OlOverviewMapControl from "./OlOverviewMapControl.vue";
+import OlPrintDialogControl from "./OlPrintDialogControl.vue";
 import OlProfileControl from "./OlProfileControl.vue";
 import OlRotateControl from "./OlRotateControl.vue";
-import OlScalelineControl from "./OlScalelineControl.vue";
+import OlScaleLineControl from "./OlScaleLineControl.vue";
 import OlSearchControl from "./OlSearchControl.vue";
 import OlSwipeControl from "./OlSwipeControl.vue";
 import OlToggleControl from "./OlToggleControl.vue";
-import OlVideorecorderControl from "./OlVideorecorderControl.vue";
+import OlVideoRecorderControl from "./OlVideoRecorderControl.vue";
 import OlZoneControl from "./OlZoneControl.vue";
 import OlZoomControl from "./OlZoomControl.vue";
-import OlZoomsliderControl from "./OlZoomsliderControl.vue";
-import OlZoomtoextentControl from "./OlZoomtoextentControl.vue";
+import OlZoomSliderControl from "./OlZoomSliderControl.vue";
+import OlZoomToExtentControl from "./OlZoomToExtentControl.vue";
 import type { Vue3OpenlayersGlobalOptions } from "@/types";
+import { registerWithAliases } from "../registerWithAliases";
 
 function install(app: App, options?: Vue3OpenlayersGlobalOptions) {
-  app.component("OlAttributionControl", OlAttributionControl);
-  app.component("OlFullscreenControl", OlFullscreenControl);
-  app.component("OlMousepositionControl", OlMousepositionControl);
-  app.component("OlOverviewmapControl", OlOverviewmapControl);
-  app.component("OlScalelineControl", OlScalelineControl);
-  app.component("OlZoomControl", OlZoomControl);
-  app.component("OlZoomsliderControl", OlZoomsliderControl);
-  app.component("OlZoomtoextentControl", OlZoomtoextentControl);
-  app.component("OlRotateControl", OlRotateControl);
-  app.component("OlContextMenuControl", OlContextMenuControl);
-  app.component("OlSearchControl", OlSearchControl);
-  app.component("OlSwipeControl", OlSwipeControl);
-  app.component("OlControlBar", OlControlBar);
-  app.component("OlToggleControl", OlToggleControl);
-  app.component("OlButtonControl", OlButtonControl);
-  app.component("OlPrintdialogControl", OlPrintdialogControl);
-  app.component("OlProfileControl", OlProfileControl);
-  app.component("OlVideorecorderControl", OlVideorecorderControl);
-  app.component("OlLayerswitcherControl", OlLayerswitcherControl);
-  app.component("OlLayerswitcherimageControl", OlLayerswitcherimageControl);
-  app.component("OlZoneControl", OlZoneControl);
+  registerWithAliases(app, "OlAttributionControl", OlAttributionControl);
+  registerWithAliases(app, "OlFullScreenControl", OlFullScreenControl);
+  registerWithAliases(app, "OlMousePositionControl", OlMousePositionControl);
+  registerWithAliases(app, "OlOverviewMapControl", OlOverviewMapControl);
+  registerWithAliases(app, "OlScaleLineControl", OlScaleLineControl);
+  registerWithAliases(app, "OlZoomControl", OlZoomControl);
+  registerWithAliases(app, "OlZoomSliderControl", OlZoomSliderControl);
+  registerWithAliases(app, "OlZoomToExtentControl", OlZoomToExtentControl);
+  registerWithAliases(app, "OlRotateControl", OlRotateControl);
+  registerWithAliases(app, "OlContextMenuControl", OlContextMenuControl);
+  registerWithAliases(app, "OlSearchControl", OlSearchControl);
+  registerWithAliases(app, "OlSwipeControl", OlSwipeControl);
+  registerWithAliases(app, "OlControlBar", OlControlBar);
+  registerWithAliases(app, "OlToggleControl", OlToggleControl);
+  registerWithAliases(app, "OlButtonControl", OlButtonControl);
+  registerWithAliases(app, "OlPrintDialogControl", OlPrintDialogControl);
+  registerWithAliases(app, "OlProfileControl", OlProfileControl);
+  registerWithAliases(app, "OlVideoRecorderControl", OlVideoRecorderControl);
+  registerWithAliases(app, "OlLayerSwitcherControl", OlLayerSwitcherControl);
+  registerWithAliases(
+    app,
+    "OlLayerSwitcherImageControl",
+    OlLayerSwitcherImageControl,
+  );
+  registerWithAliases(app, "OlZoneControl", OlZoneControl);
 
   if (options) {
     app.provide("ol-options", options);
@@ -62,21 +67,21 @@ export {
   OlButtonControl,
   OlContextMenuControl,
   OlControlBar,
-  OlFullscreenControl,
-  OlLayerswitcherControl,
-  OlLayerswitcherimageControl,
-  OlMousepositionControl,
-  OlOverviewmapControl,
-  OlPrintdialogControl,
+  OlFullScreenControl,
+  OlLayerSwitcherControl,
+  OlLayerSwitcherImageControl,
+  OlMousePositionControl,
+  OlOverviewMapControl,
+  OlPrintDialogControl,
   OlProfileControl,
   OlRotateControl,
-  OlScalelineControl,
+  OlScaleLineControl,
   OlSearchControl,
   OlSwipeControl,
   OlToggleControl,
-  OlVideorecorderControl,
+  OlVideoRecorderControl,
   OlZoneControl,
   OlZoomControl,
-  OlZoomsliderControl,
-  OlZoomtoextentControl,
+  OlZoomSliderControl,
+  OlZoomToExtentControl,
 };

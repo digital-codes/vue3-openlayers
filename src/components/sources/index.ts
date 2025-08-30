@@ -1,39 +1,40 @@
 import type { App } from "vue";
-import OlSourceBingmaps from "./OlSourceBingmaps.vue";
+import OlSourceBingMaps from "./OlSourceBingMaps.vue";
 import OlSourceCluster from "./OlSourceCluster.vue";
 import OlSourceImageStatic from "./OlSourceImageStatic.vue";
-import OlSourceImageWms from "./OlSourceImageWms.vue";
-import OlSourceOsm from "./OlSourceOsm.vue";
+import OlSourceImageWMS from "./OlSourceImageWMS.vue";
+import OlSourceOSM from "./OlSourceOSM.vue";
 import OlSourceStadiaMaps from "./OlSourceStadiaMaps.vue";
 import OlSourceTianditu from "./OlSourceTianditu.vue";
-import OlSourceTileArcgisRest from "@/components/sources/OlSourceTileArcgisRest.vue";
+import OlSourceTileArcGISRest from "@/components/sources/OlSourceTileArcGISRest.vue";
 import OlSourceTileDebug from "./OlSourceTileDebug.vue";
-import OlSourceGeoTiff from "./OlSourceGeoTiff.vue";
-import OlSourceTileJson from "./OlSourceTileJson.vue";
-import OlSourceTileWms from "./OlSourceTileWms.vue";
+import OlSourceGeoTIFF from "./OlSourceGeoTIFF.vue";
+import OlSourceTileJSON from "./OlSourceTileJSON.vue";
+import OlSourceTileWMS from "./OlSourceTileWMS.vue";
 import OlSourceVector from "./OlSourceVector.vue";
 import OlSourceVectorTile from "./OlSourceVectorTile.vue";
-import OlSourceXyz from "./OlSourceXyz.vue";
-import OlSourceWmts from "./OlSourceWmts.vue";
+import OlSourceXYZ from "./OlSourceXYZ.vue";
+import OlSourceWMTS from "./OlSourceWMTS.vue";
 import type { Vue3OpenlayersGlobalOptions } from "@/types";
+import { registerWithAliases } from "../registerWithAliases";
 
 function install(app: App, options?: Vue3OpenlayersGlobalOptions) {
-  app.component("OlSourceBingmaps", OlSourceBingmaps);
-  app.component("OlSourceCluster", OlSourceCluster);
-  app.component("OlSourceImageStatic", OlSourceImageStatic);
-  app.component("OlSourceImageWms", OlSourceImageWms);
-  app.component("OlSourceOsm", OlSourceOsm);
-  app.component("OlSourceStadiaMaps", OlSourceStadiaMaps);
-  app.component("OlSourceTianditu", OlSourceTianditu);
-  app.component("OlSourceTileArcgisRest", OlSourceTileArcgisRest);
-  app.component("OlSourceTileDebug", OlSourceTileDebug);
-  app.component("OlSourceGeoTiff", OlSourceGeoTiff);
-  app.component("OlSourceTileJson", OlSourceTileJson);
-  app.component("OlSourceTileWms", OlSourceTileWms);
-  app.component("OlSourceVector", OlSourceVector);
-  app.component("OlSourceVectorTile", OlSourceVectorTile);
-  app.component("OlSourceXyz", OlSourceXyz);
-  app.component("OlSourceWmts", OlSourceWmts);
+  registerWithAliases(app, "OlSourceBingMaps", OlSourceBingMaps);
+  registerWithAliases(app, "OlSourceCluster", OlSourceCluster);
+  registerWithAliases(app, "OlSourceImageStatic", OlSourceImageStatic);
+  registerWithAliases(app, "OlSourceImageWMS", OlSourceImageWMS);
+  registerWithAliases(app, "OlSourceOSM", OlSourceOSM);
+  registerWithAliases(app, "OlSourceStadiaMaps", OlSourceStadiaMaps);
+  registerWithAliases(app, "OlSourceTianditu", OlSourceTianditu);
+  registerWithAliases(app, "OlSourceTileArcGISRest", OlSourceTileArcGISRest);
+  registerWithAliases(app, "OlSourceTileDebug", OlSourceTileDebug);
+  registerWithAliases(app, "OlSourceGeoTIFF", OlSourceGeoTIFF);
+  registerWithAliases(app, "OlSourceTileJSON", OlSourceTileJSON);
+  registerWithAliases(app, "OlSourceTileWMS", OlSourceTileWMS);
+  registerWithAliases(app, "OlSourceVector", OlSourceVector);
+  registerWithAliases(app, "OlSourceVectorTile", OlSourceVectorTile);
+  registerWithAliases(app, "OlSourceXYZ", OlSourceXYZ);
+  registerWithAliases(app, "OlSourceWMTS", OlSourceWMTS);
 
   if (options) {
     app.provide("ol-options", options);
@@ -48,20 +49,20 @@ export default install;
 
 export {
   install,
-  OlSourceBingmaps,
+  OlSourceBingMaps,
   OlSourceCluster,
   OlSourceImageStatic,
-  OlSourceImageWms,
-  OlSourceOsm,
+  OlSourceImageWMS,
+  OlSourceOSM,
   OlSourceStadiaMaps,
   OlSourceTianditu,
-  OlSourceTileArcgisRest,
+  OlSourceTileArcGISRest,
   OlSourceTileDebug,
-  OlSourceGeoTiff,
-  OlSourceTileJson,
-  OlSourceTileWms,
+  OlSourceGeoTIFF,
+  OlSourceTileJSON,
+  OlSourceTileWMS,
   OlSourceVector,
   OlSourceVectorTile,
-  OlSourceXyz,
-  OlSourceWmts,
+  OlSourceXYZ,
+  OlSourceWMTS,
 };
