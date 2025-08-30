@@ -1,5 +1,12 @@
 # Changelog
 
+## [12.0.1](https://github.com/MelihAltintas/vue3-openlayers/compare/v12.0.0...v12.0.1) (2025-08-30)
+
+
+### Bug Fixes
+
+* use correct path mapping to styles.css ([44eaa6f](https://github.com/MelihAltintas/vue3-openlayers/commit/44eaa6f84973381137f0ec7725d73fce8f88df7d))
+
 ## [12.0.0](https://github.com/MelihAltintas/vue3-openlayers/compare/v11.6.2...v12.0.0) (2025-08-30)
 
 ### 🚨 Breaking Changes
