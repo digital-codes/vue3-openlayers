@@ -1,5 +1,6 @@
+# Changelog
 
-## [12.0.0](https://github.com/MelihAltintas/vue3-openlayers/compare/v11.6.2...v12.0.0) (2025-08-27)
+## [12.0.0](https://github.com/MelihAltintas/vue3-openlayers/compare/v11.6.2...v12.0.0) (2025-08-30)
 
 ### 🚨 Breaking Changes
 
@@ -106,13 +107,16 @@ The following subpaths are now available for tree-shaking:
 3. **Add style imports**: Explicitly import CSS files where needed
 4. **Review bundle**: Take advantage of smaller bundle sizes with selective imports
 
+### Bug Fixes
+
+* **ol-swipe-control:** explicitly set `layers` and `rightLayers` ([35bca40](https://github.com/MelihAltintas/vue3-openlayers/commit/35bca405cb0efd53e0bd5fa5e7ff7263673f2f1d)), closes [#376](https://github.com/MelihAltintas/vue3-openlayers/issues/376)
+
 ### ✨ Other Changes
 - Internal refactoring for better modularity and future maintenance
 - Documentation and examples updated to reflect new import patterns
 - Improved TypeScript support with better type definitions for tree-shaken imports
 - `package.json` exports configured for all new subpaths
 - Removed duplicate component files to eliminate confusion
-
 
 ## [11.6.2](https://github.com/MelihAltintas/vue3-openlayers/compare/v11.6.1...v11.6.2) (2025-06-05)
 
