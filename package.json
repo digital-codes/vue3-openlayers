@@ -143,8 +143,8 @@
       "types": "./dist/types/*.d.ts"
     },
     "./vue3-openlayers.css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
+      "import": "./dist/styles.css",
+      "require": "./dist/styles.css"
     }
   },
   "files": [
