@@ -21,7 +21,7 @@ import PointerDemo from "@demos/PointerDemo.vue"
 ## Usage
 
 | Plugin Usage               |            Explicit Import            |
-|----------------------------|:-------------------------------------:|
+| -------------------------- | :-----------------------------------: |
 | `<ol-interaction-pointer>` | `<Interactions.OlInteractionPointer>` |
 
 ::: code-group

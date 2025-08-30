@@ -21,7 +21,7 @@ import MouseWheelZoomDemo from "@demos/MouseWheelZoomDemo.vue"
 ## Usage
 
 | Plugin Usage                        |               Explicit Import                |
-|-------------------------------------|:--------------------------------------------:|
+| ----------------------------------- | :------------------------------------------: |
 | `<ol-interaction-mouse-wheel-zoom>` | `<Interactions.OlInteractionMouseWheelZoom>` |
 
 ::: code-group
@@ -78,5 +78,3 @@ onMounted(() => {
 });
 </script>
 ```
-
-

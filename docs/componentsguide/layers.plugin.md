@@ -11,7 +11,7 @@ import App from "./App.vue";
 
 import {
   Map,
-  Layers,// [!code focus]
+  Layers, // [!code focus]
   Sources,
 } from "vue3-openlayers";
 

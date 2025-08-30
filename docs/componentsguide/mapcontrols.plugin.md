@@ -13,7 +13,7 @@ import {
   Map,
   Layers,
   Sources,
-  MapControls,// [!code focus]
+  MapControls, // [!code focus]
 } from "vue3-openlayers";
 
 const app = createApp(App);

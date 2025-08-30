@@ -9,10 +9,7 @@ This assures, the lib can be found easily and that it follows a common plugin na
 ```jsonc [package.json]
 {
   "name": "vue3-openlayers-source-foo",
-  "keywords": [
-    "openlayers",
-    "vue3-openlayers",
-  ],
+  "keywords": ["openlayers", "vue3-openlayers"],
   //...
 }
 ```

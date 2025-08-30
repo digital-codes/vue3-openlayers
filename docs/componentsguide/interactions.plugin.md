@@ -13,7 +13,7 @@ import {
   Map,
   Layers,
   Sources,
-  Interactions,// [!code focus]
+  Interactions, // [!code focus]
 } from "vue3-openlayers";
 
 const app = createApp(App);

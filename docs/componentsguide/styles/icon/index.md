@@ -18,7 +18,7 @@ import IconDemoHtmlContent from "@demos/IconDemoHtmlContent.vue"
 ## Usage
 
 | Plugin Usage      |    Explicit Import     |
-|-------------------|:----------------------:|
+| ----------------- | :--------------------: |
 | `<ol-style-icon>` | `<Styles.OlStyleIcon>` |
 
 ### `src` URL

@@ -61,8 +61,8 @@ The color either in hexadecimal or as RGB array with red, green, and blue values
   "colorStops": [
     [0, "red"], // Start color at position 0. The color at the beginning of the gradient is red.
     [0.5, "yellow"], // Middle color at position 0.5. The color at the midpoint of the gradient (y = 128) is yellow.
-    [1, "green"] // End color at position 1. The color at the end of the gradient (y = 256) is green.
-  ]
+    [1, "green"], // End color at position 1. The color at the end of the gradient (y = 256) is green.
+  ],
 }
 ```
 
@@ -80,8 +80,8 @@ The color either in hexadecimal or as RGB array with red, green, and blue values
   "colorStops": [
     [0, "blue"], // Color at the center of the gradient (r = 0). The color at the very center of the radial gradient is blue.
     [0.5, "cyan"], // Color at the midpoint of the gradient. At the midpoint of the radius (r = 64), the color is cyan.
-    [1, "white"] // Color at the edge of the gradient (r = 128). The color at the outer edge of the radial gradient is white.
-  ]
+    [1, "white"], // Color at the edge of the gradient (r = 128). The color at the outer edge of the radial gradient is white.
+  ],
 }
 ```
 
@@ -96,8 +96,8 @@ The color either in hexadecimal or as RGB array with red, green, and blue values
   "colorStops": [
     [0, "red"], // Start color at position 0. The color at the beginning of the gradient is red.
     [0.5, "yellow"], // Middle color at position 0.5. The color at the midpoint of the gradient (y = 128) is yellow.
-    [1, "green"] // End color at position 1. The color at the end of the gradient (y = 256) is green.
-  ]
+    [1, "green"], // End color at position 1. The color at the end of the gradient (y = 256) is green.
+  ],
 }
 ```
 

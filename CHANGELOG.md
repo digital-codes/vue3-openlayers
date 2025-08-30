@@ -3,6 +3,15 @@
 
 ### 🚨 Breaking Changes
 
+#### peer dependencies
+
+The project uses now a minimum node version of `22.0.0`.
+Also the following minimum peerDependencies are required:
+- `ol@^10.6.0`
+- `ol-contextmenu@^5.5.0`
+- `ol-ext@^4.0.34`
+- `vue@3.5.0`
+
 #### fix(ol-swipe-control): explicitly set `layers` and `rightLayers`
 
 Before, only the second passed layer was added to the right side. Now you can explicitly pass (multiple) layers for the left (or top) using `layers` and for the right (bottom) using `rightLayers`.

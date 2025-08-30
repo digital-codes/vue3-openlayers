@@ -4,10 +4,10 @@ vue3-openlayers works with the following versions which must be installed as pee
 
 <!-- auto-generated-peer-dependency-requirements START -->
 
-- **[ol](https://openlayers.org/)**: `^10.0.0`
-- **[ol-contextmenu](https://github.com/jonataswalker/ol-contextmenu)**: `^5.4.0`
-- **[ol-ext](https://github.com/Viglino/ol-ext#,)**: `^4.0.21`
-- **[vue](https://github.com/vuejs/core/tree/main/packages/vue#readme)**: `^3.4.0`
+- **[ol](https://openlayers.org/)**: `^10.6.0`
+- **[ol-contextmenu](https://github.com/jonataswalker/ol-contextmenu)**: `^5.5.0`
+- **[ol-ext](https://github.com/Viglino/ol-ext#,)**: `^4.0.34`
+- **[vue](https://github.com/vuejs/core/tree/main/packages/vue#readme)**: `^3.5.0`
 
 <!-- auto-generated-peer-dependency-requirements END -->
 
@@ -86,7 +86,8 @@ app.mount("#app");
 <script setup lang="ts"></script>
 
 <template>
-  <ol-map style="min-width: 400px; height: 400px;">// [!code focus:6]
+  <ol-map style="min-width: 400px; height: 400px;"
+    >// [!code focus:6]
     <ol-view :center="[40, 40]" :zoom="5" projection="EPSG:4326" />
     <ol-tile-layer>
       <ol-source-osm />
@@ -134,10 +135,10 @@ The first approach is to disable the whole affected route where the map is rende
 export default defineNuxtConfig({
   // ...
   routeRules: {
-    '/sales': { ssr: false },
+    "/sales": { ssr: false },
   },
   // ...
-})
+});
 ```
 
 You can also specifically render the map only at client side, by putting inside the `ClientOnly` component:
@@ -146,9 +147,9 @@ You can also specifically render the map only at client side, by putting inside 
 <template>
   <ClientOnly>
     <Map.OlMap style="min-width: 400px; height: 400px;">
-      <Map.OlView :center="[40, 40]" :zoom="5" projection="EPSG:4326"/>
+      <Map.OlView :center="[40, 40]" :zoom="5" projection="EPSG:4326" />
       <Layers.OlTileLayer>
-        <Sources.OlSourceOSM/>
+        <Sources.OlSourceOSM />
       </Layers.OlTileLayer>
     </Map.OlMap>
   </ClientOnly>

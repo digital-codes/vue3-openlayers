@@ -5,7 +5,6 @@ Thank you for your interest in contributing to this project! 🎉 Follow the ste
 ## 🏁 Getting Started
 
 1. **🔗 Fork the Repository**: Click the "Fork" button on the GitHub repository page to create your own copy. You can fork the repository using:
-
    - [GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop)
    - [Command Line](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository)
    - [GitHub Codespaces](https://github.com/features/codespaces)

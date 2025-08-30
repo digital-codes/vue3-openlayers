@@ -148,7 +148,7 @@ const props = withDefaults(
   defineProps<{
     speed?: number;
     // ...
-   }>(),
+  }>(),
   {
     speed: 0,
   },
@@ -230,17 +230,21 @@ The following composables are exposed to support 3rd-party libs.
 ### usePropsAsObjectProperties
 
 This composable is used to proxy vue component props and:
+
 - log them in debug mode
 - make them reactive
 - convert prop `styles` int `style` since `style` cannot be used as HTML attribute since it conflicts wit native `style` attribute.
 
 ```ts
-const props = withDefaults(defineProps<{
-  title: string;
-  styles: string[]
-}>(), {
-  styles: []
-});
+const props = withDefaults(
+  defineProps<{
+    title: string;
+    styles: string[];
+  }>(),
+  {
+    styles: [],
+  },
+);
 
 const properties = usePropsAsObjectProperties(props);
 // properties.styles is undefined

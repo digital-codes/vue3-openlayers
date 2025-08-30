@@ -13,7 +13,7 @@ import {
   Map,
   Layers,
   Sources,
-  Geometries,// [!code focus]
+  Geometries, // [!code focus]
 } from "vue3-openlayers";
 
 const app = createApp(App);
