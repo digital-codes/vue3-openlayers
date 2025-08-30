@@ -1,46 +1,108 @@
 
 ## [12.0.0](https://github.com/MelihAltintas/vue3-openlayers/compare/v11.6.2...v12.0.0) (2025-08-27)
 
-### Breaking Changes & Improvements
-  - Full tree-shaking support: you can now import only the modules you need, reducing bundle size.
-    New import syntax examples:
-    ```js
-    // Import a single component
-    import { OlMap } from "vue3-openlayers/map";
-    import { OlTileLayer } from "vue3-openlayers/layers";
-    import { OlSourceOSM } from "vue3-openlayers/sources";
-    import { OlFullScreenControl } from "vue3-openlayers/controls";
-    import { OlStyle } from "vue3-openlayers/styles";
-    ```
-  - Component renaming for consistency: many components have been renamed to use consistent PascalCase naming. All imports and usage are now case-sensitive. For example:
-    - `OlSourceOSM` (not `OlSourceOsm`)
-    - `OlSourceWMTS` (not `OlSourceWmts`)
-    - `OlLayerSwitcherControl` (not `OlLayerSwitchercontrol`)
-    - `OlLayerSwitcherImageControl` (not `OlLayerSwitcherimageControl`)
-    - `OlSourceBingMaps` (not `OlSourceBingmaps`)
-    - `OlSourceGeoTIFF` (not `OlSourceGeoTiff`)
-    - `OlSourceTileJSON` (not `OlSourceTileJson`)
-    - `OlSourceTileWMS` (not `OlSourceTileWms`)
-    - `OlSourceXYZ` (not `OlSourceXyz`)
-    - `OlInteractionClusterSelect` (not `OlInteractionClusterselect`)
-    - `OlInteractionDragBox` (not `OlInteractionDragbox`)
-    - `OlInteractionDragRotate` (not `OlInteractionDragrotate`)
-    - `OlInteractionDragRotateAndZoom` (not `OlInteractionDragrotatezoom`)
-    - And more, please see the release diff using the GitHub release diff.
-  - Styles are no longer automatically imported.
-  - How to migrate:
-    - Update all imports to use the new subpath and PascalCase names.
-    - Review your code for any case mismatches in component names.
-    - Import styles from both openlayers and vue3-openlayers packages where appropriate:
-    ```js
-    import 'ol/ol.css';
-    import 'vue3-openlayers/vue3-openlayers.css';
-    ```
+### 🚨 Breaking Changes
 
-### Other Changes
-  - Internal refactoring for better modularity and future maintenance.
-  - Documentation and examples updated to reflect new import patterns.
+#### fix(ol-swipe-control): explicitly set `layers` and `rightLayers`
 
+Before, only the second passed layer was added to the right side. Now you can explicitly pass (multiple) layers for the left (or top) using `layers` and for the right (bottom) using `rightLayers`.
+
+With this version `ol-swipe-control`:
+property `layerList` has been removed and splitted into `layers` and `rightLayers`.
+Please pass explicitly `layers` for the left side (or top, depending on the `orientation`) and `rightLayers` for the right side (or bottom, depending on the `orientation`)
+
+#### Tree-Shaking Support & New Import Structure
+- **Full tree-shaking support**: You can now import only the modules you need, significantly reducing bundle size.
+- **New modular import syntax**: Import components from specific subpaths instead of the main package.
+
+**Migration Examples:**
+```js
+// ❌ Old import syntax (v11 and below)
+import { OlMap, OlTileLayer, OlSourceOSM } from "vue3-openlayers";
+
+// ✅ New import syntax (v12+)
+import { OlMap } from "vue3-openlayers/map";
+import { OlTileLayer } from "vue3-openlayers/layers";
+import { OlSourceOSM } from "vue3-openlayers/sources";
+import { OlFullScreenControl } from "vue3-openlayers/controls";
+import { OlStyle } from "vue3-openlayers/styles";
+import { OlInteractionSelect } from "vue3-openlayers/interactions";
+```
+
+#### Component Renaming for Consistency
+All components now use consistent **PascalCase** naming. Duplicate files with inconsistent casing have been removed.
+
+**Source Components:**
+- `OlSourceOsm` ➡️ renamed to **`OlSourceOSM`**
+- `OlSourceBingmaps` ➡️ renamed to **`OlSourceBingMaps`**
+- `OlSourceGeoTiff` ➡️ renamed to **`OlSourceGeoTIFF`**
+- `OlSourceImageWms` ➡️ renamed to **`OlSourceImageWMS`**
+- `OlSourceTileArcgisRest` ➡️ renamed to **`OlSourceTileArcGISRest`**
+- `OlSourceTileJson` ➡️ renamed to **`OlSourceTileJSON`**
+- `OlSourceTileWms` ➡️ renamed to **`OlSourceTileWMS`**
+- `OlSourceWmts` ➡️ renamed to **`OlSourceWMTS`**
+- `OlSourceXyz` ➡️ renamed to **`OlSourceXYZ`**
+
+**Map Controls:**
+- `OlFullscreenControl` ➡️ renamed to **`OlFullScreenControl`**
+- `OlLayerswitcherControl` ➡️ renamed to **`OlLayerSwitcherControl`**
+- `OlLayerswitcherimageControl` ➡️ renamed to **`OlLayerSwitcherImageControl`**
+- `OlMousepositionControl` ➡️ renamed to **`OlMousePositionControl`**
+- `OlOverviewmapControl` ➡️ renamed to **`OlOverviewMapControl`**
+- `OlPrintdialogControl` ➡️ renamed to **`OlPrintDialogControl`**
+- `OlScalelineControl` ➡️ renamed to **`OlScaleLineControl`**
+- `OlVideorecorderControl` ➡️ renamed to **`OlVideoRecorderControl`**
+- `OlZoomsliderControl` ➡️ renamed to **`OlZoomSliderControl`**
+- `OlZoomtoextentControl` ➡️ renamed to **`OlZoomToExtentControl`**
+
+**Interactions:**
+- `OlInteractionClusterselect` ➡️ renamed to **`OlInteractionClusterSelect`**
+- `OlInteractionDragbox` ➡️ renamed to **`OlInteractionDragBox`**
+- `OlInteractionDragrotate` ➡️ renamed to **`OlInteractionDragRotate`**
+- `OlInteractionDragrotatezoom` ➡️ renamed to **`OlInteractionDragRotateAndZoom`**
+
+**Layers:**
+- `OlAnimatedClusterlayer` ➡️ renamed to **`OlAnimatedClusterLayer`**
+
+**Map Components:**
+- `OlGeolocation` component location/naming has been updated
+
+#### Styles No Longer Auto-Imported
+- Styles are no longer automatically imported with the package
+- You must explicitly import both OpenLayers and vue3-openlayers styles
+
+```js
+// Required imports for styles
+import 'ol/ol.css';
+import 'vue3-openlayers/vue3-openlayers.css';
+```
+
+#### Available Import Paths
+The following subpaths are now available for tree-shaking:
+- `vue3-openlayers/animations`
+- `vue3-openlayers/composables`
+- `vue3-openlayers/controls`
+- `vue3-openlayers/geometries`
+- `vue3-openlayers/helpers`
+- `vue3-openlayers/interactions`
+- `vue3-openlayers/layers`
+- `vue3-openlayers/map`
+- `vue3-openlayers/sources`
+- `vue3-openlayers/styles`
+
+### 🔧 Migration Guide
+
+1. **Update imports**: Replace single-package imports with subpath imports
+2. **Fix component names**: Update any components using the old inconsistent casing
+3. **Add style imports**: Explicitly import CSS files where needed
+4. **Review bundle**: Take advantage of smaller bundle sizes with selective imports
+
+### ✨ Other Changes
+- Internal refactoring for better modularity and future maintenance
+- Documentation and examples updated to reflect new import patterns
+- Improved TypeScript support with better type definitions for tree-shaken imports
+- `package.json` exports configured for all new subpaths
+- Removed duplicate component files to eliminate confusion
 
 
 ## [11.6.2](https://github.com/MelihAltintas/vue3-openlayers/compare/v11.6.1...v11.6.2) (2025-06-05)
