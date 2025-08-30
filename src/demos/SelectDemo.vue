@@ -47,7 +47,7 @@
   </ol-map>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import markerIcon from "@/assets/marker.png";
 import { ref, inject } from "vue";
 

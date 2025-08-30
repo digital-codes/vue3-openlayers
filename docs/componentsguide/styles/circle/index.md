@@ -8,7 +8,7 @@ Use it inside ol-style to style points as circles.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import GeomPoint from "@demos/GeomPoint.vue"
 </script>
 

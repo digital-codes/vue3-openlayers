@@ -8,7 +8,7 @@ Use it inside ol-style to style lines and polygons, inside ol-style-circle to st
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import LineString from "@demos/LineString.vue"
 </script>
 <ClientOnly>

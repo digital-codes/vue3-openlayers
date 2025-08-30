@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ZoomAnimation from "@demos/ZoomAnimation.vue"
 </script>
 

@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ProfileControlDemo from "@demos/ProfileControlDemo.vue"
 </script>
 <ClientOnly>

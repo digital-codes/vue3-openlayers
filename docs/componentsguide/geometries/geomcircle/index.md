@@ -6,7 +6,7 @@ ol-geom-circle can be used inside a ol-feature to draw a single circle.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import CircleDemo from "@demos/CircleDemo.vue"
 </script>
 

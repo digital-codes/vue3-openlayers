@@ -6,7 +6,7 @@ ol-geom--multi-point can be used inside a ol-feature to draw multiple points at 
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import MultiPoint from "@demos/MultiPoint.vue"
 </script>
 <ClientOnly>

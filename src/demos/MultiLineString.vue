@@ -53,7 +53,7 @@
   </ol-map>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 
 const center = ref([116.54875, 40.45064]);

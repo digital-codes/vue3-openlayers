@@ -112,23 +112,25 @@ export class MapPage {
   }
 
   async clickOnCanvas(point: Point, modifiers?: Modifier[], dblClick = false) {
-    dblClick
-      ? await this.mapCanvas().dblclick({
-          position: {
-            x: point[0],
-            y: point[1],
-          },
-          modifiers,
-          force: true,
-        })
-      : await this.mapCanvas().click({
-          position: {
-            x: point[0],
-            y: point[1],
-          },
-          modifiers,
-          force: true,
-        });
+    if (dblClick) {
+      await this.mapCanvas().dblclick({
+        position: {
+          x: point[0],
+          y: point[1],
+        },
+        modifiers,
+        force: true,
+      });
+    } else {
+      await this.mapCanvas().click({
+        position: {
+          x: point[0],
+          y: point[1],
+        },
+        modifiers,
+        force: true,
+      });
+    }
   }
 
   async drawPoint(point: Point, dblClick = false) {

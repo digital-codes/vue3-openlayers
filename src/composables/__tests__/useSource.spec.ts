@@ -33,12 +33,6 @@ describe("useSource", () => {
   }
 
   it("should add the source to a layer immediately", () => {
-    const { setSourceSpy } = createComponent();
-    expect(setSourceSpy).toBeCalledTimes(2);
-    expect(setSourceSpy).toHaveBeenLastCalledWith(expect.any(Source));
-  });
-
-  it("should add the source to a layer immediately", () => {
     const { setSourceSpy, wrapper } = createComponent();
     wrapper.unmount();
     expect(setSourceSpy).toBeCalledTimes(3);

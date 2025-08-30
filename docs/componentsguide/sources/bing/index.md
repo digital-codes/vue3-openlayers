@@ -9,7 +9,7 @@ this source you should get **API key** at https://www.bingmapsportal.com.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import BingMapsDemo from "@demos/BingMapsDemo.vue"
 </script>
 

@@ -6,7 +6,7 @@ ol-geom-multi-line-string can be used inside a ol-feature to draw multiple lines
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import MultiLineString from "@demos/MultiLineString.vue"
 </script>
 <ClientOnly>

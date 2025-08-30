@@ -8,7 +8,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ProjectionRegisterDemo from "@demos/ProjectionRegisterDemo.vue"
 </script>
 

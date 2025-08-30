@@ -6,7 +6,7 @@ ol-vector-tile-layer can render vector tile from various backend services. It sh
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import VectorTileLayerDemo from "@demos/VectorTileLayerDemo.vue"
 import FeatureSelectDemo from "@demos/FeatureSelectDemo.vue"
 </script>

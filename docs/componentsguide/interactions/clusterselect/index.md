@@ -8,7 +8,7 @@ The interaction components wraps `SelectCluster` interaction of the [famous `ol-
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import AnimatedClusterDemo from "@demos/AnimatedClusterDemo.vue"
 </script>
 

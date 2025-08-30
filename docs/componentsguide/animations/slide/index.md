@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import SlideAnimation from "@demos/SlideAnimation.vue"
 </script>
 

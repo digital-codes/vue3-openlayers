@@ -26,7 +26,7 @@
   </ol-map>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const center = [312234.8270497762, 2636116.2213047906];
 const projectionName = "EPSG:32640";
 const projectionDef = "+proj=utm +zone=40 +datum=WGS84 +units=m +no_defs";

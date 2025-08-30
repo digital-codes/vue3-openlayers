@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import PrintdialogControlDemo from "@demos/PrintdialogControlDemo.vue"
 </script>
 <ClientOnly>

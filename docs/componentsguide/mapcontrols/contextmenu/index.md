@@ -8,7 +8,7 @@ Right click on the map to open the contextmenu.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ContextMenuDemo from "@demos/ContextMenuDemo.vue"
 </script>
 <ClientOnly>

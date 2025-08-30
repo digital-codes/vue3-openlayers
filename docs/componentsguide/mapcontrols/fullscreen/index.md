@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import FullscreenControlDemo from "@demos/FullscreenControlDemo.vue"
 </script>
 <ClientOnly>

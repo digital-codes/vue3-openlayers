@@ -9,7 +9,7 @@ Reloading the page restores the map view state.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ViewDemo from "@demos/ViewDemo.vue"
 </script>
 

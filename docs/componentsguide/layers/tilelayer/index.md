@@ -6,7 +6,7 @@ ol-tile-layer can render images from sources that provide pre-rendered, tiled im
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import TileLayerDemo from "@demos/TileLayerDemo.vue"
 </script>
 <ClientOnly>

@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import MousepositionControlDemo from "@demos/MousepositionControlDemo.vue"
 </script>
 <ClientOnly>

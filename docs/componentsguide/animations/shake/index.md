@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ShakeAnimation from "@demos/ShakeAnimation.vue"
 </script>
 

@@ -7,7 +7,7 @@ aside: false
 This Demo show lot's of the provided features.
 However, to try out features, check out the [Playground](./playground.md).
 
-<script setup>
+<script setup lang="ts">
 import AppDemo from "@demos/AppDemo.vue"
 </script>
 

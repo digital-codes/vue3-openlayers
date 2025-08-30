@@ -252,7 +252,7 @@
   </ol-map>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, inject, onMounted } from "vue";
 
 import markerIcon from "@/assets/marker.png";

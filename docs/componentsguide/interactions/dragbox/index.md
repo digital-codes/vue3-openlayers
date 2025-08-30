@@ -7,7 +7,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import VectorSourceDemo1 from "@demos/VectorSourceDemo1.vue"
 </script>
 

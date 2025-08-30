@@ -6,7 +6,7 @@ Component that handles user-defined functions on `down`, `move`, `up` and `drag`
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import PointerDemo from "@demos/PointerDemo.vue"
 </script>
 

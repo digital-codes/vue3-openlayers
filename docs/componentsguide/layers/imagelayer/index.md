@@ -6,7 +6,7 @@ ol-image-layer components can render any server-rendered image, it is a containe
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ImageLayerDemo from "@demos/ImageLayerDemo.vue"
 </script>
 

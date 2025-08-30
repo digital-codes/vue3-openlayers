@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import StadiaMapsDemo from "@demos/StadiaMapsDemo.vue"
 </script>
 

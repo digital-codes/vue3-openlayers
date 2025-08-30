@@ -105,7 +105,6 @@ export default class Tianditu extends WMTSSource {
     const tdt_Mercator_resolutions = [];
     const matrixIds: string[] = [];
     for (let i = 1; i < 19; i++) {
-      // eslint-disable-next-line @typescript-eslint/no-loss-of-precision
       tdt_Mercator_resolutions.push((78271.5169640203125 * 2) / 2 ** i);
       matrixIds.push(i.toString());
     }

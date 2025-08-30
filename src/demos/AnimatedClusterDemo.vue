@@ -58,7 +58,7 @@
   </ol-map>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import { Style, Stroke, Circle, Fill } from "ol/style";
 import { arrayWith500Points } from "./points";

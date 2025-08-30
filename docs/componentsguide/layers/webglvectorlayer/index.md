@@ -19,7 +19,7 @@ For more information please checkout the [`ol-source-vector` docs](../../sources
 
 ### WebGL Points, Lines, Polygons
 
-<script setup>
+<script setup lang="ts">
 import WebglVectorLayerDemo from "@demos/WebglVectorLayerDemo.vue"
 </script>
 

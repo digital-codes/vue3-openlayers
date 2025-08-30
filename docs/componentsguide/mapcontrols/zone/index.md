@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ZoneControlDemo from "@demos/ZoneControlDemo.vue"
 </script>
 <ClientOnly>

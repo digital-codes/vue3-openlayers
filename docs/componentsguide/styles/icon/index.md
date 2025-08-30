@@ -6,7 +6,7 @@ Use it inside ol-style to style points
 
 [[toc]]
 
-<script setup>
+<script setup lang="ts">
 import IconDemo from "@demos/IconDemo.vue"
 import IconDemoHtmlContent from "@demos/IconDemoHtmlContent.vue"
 </script>

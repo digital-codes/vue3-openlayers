@@ -6,7 +6,7 @@ ol-vector-layer can render vector from various backend services. It should be us
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import VectorSourceDemo1 from "@demos/VectorSourceDemo1.vue"
 import FeatureSelectDemo from "@demos/FeatureSelectDemo.vue"
 </script>

@@ -6,7 +6,7 @@ ol-source-vector-tile can be used together with ol-vector-tile-layer to draw any
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import VectorTileLayerDemo from "@demos/VectorTileLayerDemo.vue"
 </script>
 <ClientOnly>

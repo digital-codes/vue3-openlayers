@@ -6,7 +6,7 @@ ol-heatmap-layer can render vector data as a heatmap from various backend servic
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import HeatmapLayerDemo from "@demos/HeatmapLayerDemo.vue"
 </script>
 

@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ZoomControlDemo from "@demos/ZoomControlDemo.vue"
 </script>
 <ClientOnly>

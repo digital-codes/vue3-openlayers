@@ -6,7 +6,7 @@ Source layer ready to load OpenStreetMaps tiles
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ViewDemo from "@demos/ViewDemo.vue"
 </script>
 

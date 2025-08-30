@@ -16,7 +16,7 @@ Use it inside ol-feature, ol-vector-layer, ol-interaction-select, ol-interaction
 | ------------ | :----------------: |
 | `<ol-style>` | `<Styles.OlStyle>` |
 
-<script setup>
+<script setup lang="ts">
 import GeomPoint from "@demos/GeomPoint.vue"
 import VectorSourceDemo2 from "@demos/VectorSourceDemo2.vue"
 </script>

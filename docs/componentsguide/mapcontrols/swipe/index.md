@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import SwipeControlDemo from "@demos/SwipeControlDemo.vue"
 </script>
 <ClientOnly>

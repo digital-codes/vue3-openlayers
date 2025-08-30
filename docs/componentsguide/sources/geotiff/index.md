@@ -6,7 +6,7 @@ Source for GeoTIFF tiles.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import GeoTIFFDemo from "@demos/GeoTIFFDemo.vue"
 </script>
 

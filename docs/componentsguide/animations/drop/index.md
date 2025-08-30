@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import DropAnimation from "@demos/DropAnimation.vue"
 </script>
 

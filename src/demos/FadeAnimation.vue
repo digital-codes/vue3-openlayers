@@ -36,7 +36,7 @@
   </ol-map>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import starIcon from "@/assets/star.png";
 import { arrayWith500Points } from "./points";

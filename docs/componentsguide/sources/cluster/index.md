@@ -9,7 +9,7 @@ For other geometry types, or if not all geometries should be considered for clus
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ClusterDemo from "@demos/ClusterDemo.vue"
 </script>
 

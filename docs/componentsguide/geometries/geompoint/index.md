@@ -6,7 +6,7 @@ ol-geom-point can be used inside a ol-feature to draw a single points
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import GeomPoint from "@demos/GeomPoint.vue"
 </script>
 

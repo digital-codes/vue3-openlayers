@@ -48,6 +48,7 @@ const setStyle = (val: StyleLike | FlatStyleLike) => {
       st.setStyle(val);
       st.changed();
       st.dispatchEvent("styleChanged");
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       // @ts-ignore
       st.style_ = val;

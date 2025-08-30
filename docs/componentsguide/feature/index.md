@@ -10,7 +10,7 @@ If you want to display multiple Geometries, you need to add multiple `ol-feature
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import GeomPoint from "@demos/GeomPoint.vue"
 </script>
 

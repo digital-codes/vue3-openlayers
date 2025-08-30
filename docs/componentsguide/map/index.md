@@ -14,7 +14,7 @@ component to setup `zoom`, `center`, `projection` and other view related propert
 
 ## Usage
 
-<script setup>
+<script setup lang="ts">
 import ViewDemo from "@demos/ViewDemo.vue";
 import ExistingMapDemo from "@demos/ExistingMapDemo.vue";
 </script>

@@ -49,6 +49,7 @@ const setStyle = (val: StyleLike | FlatStyleLike) => {
     }
     styledObj.value.changed();
     styledObj.value.dispatchEvent("styleChanged");
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     if (styledObj?.value) {
       // @ts-expect-error - we're forcing stuff here

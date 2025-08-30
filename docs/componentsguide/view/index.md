@@ -10,7 +10,7 @@ A View has a projection. The projection determines the coordinate system of the 
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ViewDemo from "@demos/ViewDemo.vue"
 </script>
 

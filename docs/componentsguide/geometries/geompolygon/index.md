@@ -9,7 +9,7 @@ Check the usage section for more info on this.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import PolygonDemo from "@demos/PolygonDemo.vue"
 </script>
 <ClientOnly>

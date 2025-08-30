@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ScalelineControlDemo from "@demos/ScalelineControlDemo.vue"
 </script>
 

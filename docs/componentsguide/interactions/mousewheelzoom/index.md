@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import MouseWheelZoomDemo from "@demos/MouseWheelZoomDemo.vue"
 </script>
 

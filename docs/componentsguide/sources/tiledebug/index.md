@@ -7,7 +7,7 @@ See examples/canvas-tiles for an example.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import TileDebugDemo from "@demos/TileDebugDemo.vue"
 import ProjectionRegisterDemo from "@demos/ProjectionRegisterDemo.vue"
 </script>

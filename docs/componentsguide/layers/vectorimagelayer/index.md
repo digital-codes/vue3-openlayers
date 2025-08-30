@@ -8,7 +8,7 @@ Vector data is rendered client-side, to an image, which yields much better perfo
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import VectorSourceDemo4 from "@demos/VectorSourceDemo4.vue"
 </script>
 

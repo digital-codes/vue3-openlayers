@@ -6,7 +6,7 @@ This example uses WebGL to raster tiles on a map.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import GeoTIFFDemo from "@demos/GeoTIFFDemo.vue"
 </script>
 <ClientOnly>

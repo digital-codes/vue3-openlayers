@@ -10,7 +10,7 @@ Revealed features are themselves a cluster with an attribute 'features' that con
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import AnimatedClusterDemo from "@demos/AnimatedClusterDemo.vue"
 </script>
 
@@ -55,7 +55,7 @@ You can find more information in the [performance section for `ol-source-vector`
   </ol-map>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { /* ... */, computed, inject } from "vue";
 
 // ...

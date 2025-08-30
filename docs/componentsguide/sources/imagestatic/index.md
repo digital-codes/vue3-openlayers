@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ImageLayerDemo from "@demos/ImageLayerDemo.vue"
 </script>
 

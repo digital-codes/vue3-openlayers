@@ -3,7 +3,6 @@
 import { readFileSync, writeFileSync } from "fs";
 import { npmKeyword } from "npm-keyword";
 
-// eslint-disable-next-line no-undef
 const file = process.argv[2];
 
 npmKeyword("vue3-openlayers-extension").then((results) => {

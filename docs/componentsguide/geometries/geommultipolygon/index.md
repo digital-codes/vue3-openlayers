@@ -6,7 +6,7 @@ ol-geom-multi-polygon can be used inside a ol-feature to draw multiple polygons 
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import MultiPolygon from "@demos/MultiPolygon.vue"
 </script>
 <ClientOnly>

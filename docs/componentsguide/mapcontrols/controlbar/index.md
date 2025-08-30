@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ControlBarDemo from "@demos/ControlBarDemo.vue"
 </script>
 <ClientOnly>

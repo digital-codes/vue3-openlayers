@@ -29,7 +29,7 @@ export default function useSource<T extends Source>(
   layer: Ref<Layer> | Ref<Cluster<Feature>> | null | undefined,
   props: ConstructorParameters<typeof SourceClass>[0],
   eventsToHandle: string[] = [],
-  // eslint-disable-next-line
+
   sourceUpdateActions?: (source: T) => void,
 ) {
   function getProperties() {

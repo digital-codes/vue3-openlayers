@@ -12,7 +12,7 @@
   </ol-map>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 const center = ref([14200000, 4130000]);
 const zoom = ref(6);

@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import TileJSONDemo from "@demos/TileJSONDemo.vue"
 </script>
 

@@ -7,7 +7,7 @@ the map. It has **default** scoped slot to render your custom content.
 
 [[toc]]
 
-<script setup>
+<script setup lang="ts">
 import OverlayDemo from "@demos/OverlayDemo.vue"
 import DrawMeasureDemo from "@demos/DrawMeasureDemo.vue"
 </script>

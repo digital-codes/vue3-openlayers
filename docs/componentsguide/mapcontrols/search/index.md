@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import SearchControlDemo from "@demos/SearchControlDemo.vue"
 </script>
 <ClientOnly>

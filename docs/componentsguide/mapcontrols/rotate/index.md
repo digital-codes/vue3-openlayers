@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import RotateControlDemo from "@demos/RotateControlDemo.vue"
 </script>
 <ClientOnly>

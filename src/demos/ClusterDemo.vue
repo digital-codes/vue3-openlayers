@@ -43,7 +43,7 @@
   </ol-map>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import { arrayWith500Points } from "./points";
 

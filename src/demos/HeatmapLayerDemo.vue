@@ -60,7 +60,7 @@
   </ol-map>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, inject } from "vue";
 
 const center = ref([101.97, 4.21]);

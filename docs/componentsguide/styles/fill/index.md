@@ -8,7 +8,7 @@ Use it inside ol-style, ol-style-circle, ol-style-text along with ol-style-strok
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import PolygonDemo from "@demos/PolygonDemo.vue"
 </script>
 <ClientOnly>

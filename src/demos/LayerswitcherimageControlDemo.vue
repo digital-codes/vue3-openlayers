@@ -46,7 +46,7 @@
   </ol-map>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import starIcon from "@/assets/star.png";
 import { ref, onMounted } from "vue";
 

@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ToggleControlDemo from "@demos/ToggleControlDemo.vue"
 </script>
 <ClientOnly>

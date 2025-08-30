@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import FadeAnimation from "@demos/FadeAnimation.vue"
 </script>
 

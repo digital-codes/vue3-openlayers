@@ -6,7 +6,7 @@ Source for WMS servers providing single, untiled images.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ImageWMSDemo from "@demos/ImageWMSDemo.vue"
 </script>
 

@@ -9,7 +9,7 @@ this source you should get **API key** at https://console.tianditu.gov.cn/.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import TiandituDemo from "@demos/TiandituDemo.vue"
 </script>
 
@@ -92,7 +92,7 @@ To access the source, you can use a `ref()` as shown below:
   <!-- ... -->
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted } from "vue";
 
 const sourceRef = ref(null);

@@ -10,7 +10,7 @@ a user's position. You can place it to the **default slot** of `ol-map` componen
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import GeoLocationDemo from "@demos/GeoLocationDemo.vue"
 </script>
 

@@ -6,7 +6,7 @@ Source for WMS servers providing tiled images.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import TileWMSDemo from "@demos/TileWMSDemo.vue"
 </script>
 

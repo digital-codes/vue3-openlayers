@@ -55,7 +55,7 @@
   </ol-map>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { inject, ref } from "vue";
 import { GeoJSON } from "ol/format";
 import { Collection } from "ol";

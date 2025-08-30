@@ -6,7 +6,7 @@ Layer source for tile data from WMTS servers.
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import TileLayerDemo from "@demos/TileLayerDemo.vue"
 </script>
 

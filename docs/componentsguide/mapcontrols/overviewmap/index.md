@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import OverviewmapControlDemo from "@demos/OverviewmapControlDemo.vue"
 </script>
 <ClientOnly>

@@ -978,7 +978,7 @@ Properties are mostly reflected 1:1 from OpenLayers as Component Properties for 
 ## Summary ([compared to version `0.5.1`](https://github.com/MelihAltintas/vue3-openlayers/compare/v1.0.0...v0.5.1))
 
 - 🛠️ migrated all components and features to TypeScript
-- 👩🏻‍🔧 migrated all components to use [`<script setup>` syntax](https://vuejs.org/api/sfc-script-setup.html)
+- 👩🏻‍🔧 migrated all components to use [`<script setup lang="ts">` syntax](https://vuejs.org/api/sfc-script-setup.html)
 - 🗺️ aligned API with [OpenLayers 7.4.0](https://github.com/openlayers/openlayers/releases/tag/v7.4.0)
 - 📘 updated & restructured the whole documentation
 - 🧩 added new components: `ol-layer-group`, `ol-source-tile-json`, `ol-source-stadia-maps` and `ol-vector-image-layer`

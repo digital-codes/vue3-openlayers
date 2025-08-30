@@ -8,7 +8,7 @@ For cached ArcGIS services, better performance is available using the XYZ data s
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import TileArcGISRestSourceDemo from "@demos/TileArcGISRestSourceDemo.vue"
 </script>
 

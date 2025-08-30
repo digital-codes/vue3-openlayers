@@ -10,7 +10,7 @@ or a `preview` attribute image on the layer component pointing to the thumbnail 
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import LayerswitcherimageControlDemo from "@demos/LayerswitcherimageControlDemo.vue"
 </script>
 <ClientOnly>

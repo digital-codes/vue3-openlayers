@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import TransformDemo from "@demos/TransformDemo.vue"
 </script>
 

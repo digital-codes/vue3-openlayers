@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import ModifySourceDemo from "@demos/ModifySourceDemo.vue";
 import SnapModifyDemo from "@demos/SnapModifyDemo.vue";
 </script>

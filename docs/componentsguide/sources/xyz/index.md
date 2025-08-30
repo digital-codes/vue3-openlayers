@@ -8,7 +8,7 @@ ol-source-xyz allows you to use any tiled source from OpenStreetMaps to google m
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import XYZSourceDemo from "@demos/XYZSourceDemo.vue"
 </script>
 

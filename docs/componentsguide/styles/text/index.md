@@ -6,7 +6,7 @@
 
 ## Demo
 
-<script setup>
+<script setup lang="ts">
 import TextDemo from "@demos/TextDemo.vue"
 </script>
 
