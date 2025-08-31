@@ -95,6 +95,10 @@ export const config: UserConfig = {
                 link: "/componentsguide/layers/animatedclusterlayer/",
               },
               {
+                text: "ol-graticule-layer",
+                link: "/componentsguide/layers/graticulelayer/",
+              },
+              {
                 text: "ol-heatmap-layer",
                 link: "/componentsguide/layers/heatmaplayer/",
               },

@@ -208,6 +208,13 @@
       </ol-style>
     </ol-animated-cluster-layer>
 
+    <ol-graticule-layer
+      :show-labels="true"
+      :wrap-x="false"
+      :stroke-style="graticuleStyle"
+    >
+    </ol-graticule-layer>
+
     <ol-overlay
       :position="selectedCityPosition"
       v-if="selectedCityName != '' && !drawEnable"
@@ -258,6 +265,7 @@ import { ref, inject, onMounted } from "vue";
 import markerIcon from "@/assets/marker.png";
 import starIcon from "@/assets/star.png";
 import { arrayWith500Points } from "./points";
+import { Stroke } from "ol/style";
 
 const center = ref([34, 39.13]);
 const projection = ref("EPSG:4326");
@@ -315,6 +323,12 @@ contextMenuItems.value = [
   },
   "-", // this is a separator
 ];
+
+const graticuleStyle = new Stroke({
+  color: "rgba(255,120,0,0.9)",
+  width: 1,
+  lineDash: [0.5, 4],
+});
 
 const featureSelected = (event) => {
   if (event.selected.length == 1) {

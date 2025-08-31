@@ -5,6 +5,7 @@ import {
 
 import type { App } from "vue";
 import OlAnimatedClusterLayer from "./OlAnimatedClusterLayer.vue";
+import OlGraticuleLayer from "./OlGraticuleLayer.vue";
 import OlHeatmapLayer from "./OlHeatmapLayer.vue";
 import OlImageLayer from "./OlImageLayer.vue";
 import OlLayerGroup from "./OlLayerGroup.vue";
@@ -20,6 +21,7 @@ import { registerWithAliases } from "../registerWithAliases";
 
 function install(app: App, options?: Vue3OpenlayersGlobalOptions) {
   registerWithAliases(app, "OlAnimatedClusterLayer", OlAnimatedClusterLayer);
+  registerWithAliases(app, "OlGraticuleLayer", OlGraticuleLayer);
   registerWithAliases(app, "OlHeatmapLayer", OlHeatmapLayer);
   registerWithAliases(app, "OlImageLayer", OlImageLayer);
   registerWithAliases(app, "OlLayerGroup", OlLayerGroup);
@@ -44,6 +46,7 @@ export default install;
 export {
   install,
   OlAnimatedClusterLayer,
+  OlGraticuleLayer,
   OlHeatmapLayer,
   OlImageLayer,
   OlLayerGroup,

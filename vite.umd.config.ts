@@ -76,6 +76,7 @@ export default defineConfig({
           "ol/layer": "Layer",
           "ol/layer/Group": "LayerGroup",
           "ol/layer/Heatmap": "HeatmapLayer",
+          "ol/layer/Graticule": "GraticuleLayer",
           "ol/layer/Image": "ImageLayer",
           "ol/layer/Tile": "TileLayer",
           "ol/layer/Vector": "VectorLayer",
