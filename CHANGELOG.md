@@ -1,5 +1,12 @@
 # Changelog
 
+# [12.1.0](https://github.com/MelihAltintas/vue3-openlayers/compare/v12.0.2...v12.1.0) (2025-08-31)
+
+
+### Features
+
+* **ol-graticule-layer:** provide new layer `<Layers.OlGraticuleLayer>` ([69ea135](https://github.com/MelihAltintas/vue3-openlayers/commit/69ea1353bdb83bab230a897f79e49184d9cb5d57)), closes [#436](https://github.com/MelihAltintas/vue3-openlayers/issues/436)
+
 ## [12.0.2](https://github.com/MelihAltintas/vue3-openlayers/compare/v12.0.1...v12.0.2) (2025-08-31)
 
 
