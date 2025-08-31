@@ -1,5 +1,13 @@
 # Changelog
 
+## [12.0.2](https://github.com/MelihAltintas/vue3-openlayers/compare/v12.0.1...v12.0.2) (2025-08-31)
+
+
+### Bug Fixes
+
+* run correct build command when cutting new release ([6f97bcc](https://github.com/MelihAltintas/vue3-openlayers/commit/6f97bcc4d119825da62d4ba77dda6af9a7ddafcf)), closes [#435](https://github.com/MelihAltintas/vue3-openlayers/issues/435)
+* use correct exports order ([2bc5db2](https://github.com/MelihAltintas/vue3-openlayers/commit/2bc5db2c2a8052d0b54bff48b6968359114bdd2d))
+
 ## [12.0.1](https://github.com/MelihAltintas/vue3-openlayers/compare/v12.0.0...v12.0.1) (2025-08-30)
 
 
