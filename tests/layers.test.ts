@@ -22,6 +22,16 @@ test.describe("ol-animated-clusterlayer", () => {
   });
 });
 
+test.describe("ol-graticule-layer", () => {
+  test("should render", async ({ page }) => {
+    const map = new MapPage(page);
+    await map.goto("/componentsguide/layers/graticulelayer/");
+    await map.waitUntilReady();
+    await map.waitUntilCanvasLoaded();
+    await map.checkCanvasScreenshot();
+  });
+});
+
 test.describe("ol-heatmap-layer", () => {
   test("should render", async ({ page }) => {
     const map = new MapPage(page);
