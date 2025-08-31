@@ -33,114 +33,114 @@
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/vue3-openlayers.es.js",
-      "require": "./dist/vue3-openlayers.cjs.js",
-      "types": "./dist/types/index.d.ts"
+      "require": "./dist/vue3-openlayers.cjs.js"
     },
     "./animations": {
+      "types": "./dist/types/components/animations/index.d.ts",
       "import": "./dist/esm/animations/index.js",
-      "require": "./dist/cjs/animations/index.js",
-      "types": "./dist/types/components/animations/index.d.ts"
+      "require": "./dist/cjs/animations/index.js"
     },
     "./animations/*": {
+      "types": "./dist/types/components/animations/*.d.ts",
       "import": "./dist/esm/animations/*.js",
-      "require": "./dist/cjs/animations/*.js",
-      "types": "./dist/types/components/animations/*.d.ts"
+      "require": "./dist/cjs/animations/*.js"
     },
     "./composables": {
+      "types": "./dist/types/composables/index.d.ts",
       "import": "./dist/esm/composables/index.js",
-      "require": "./dist/cjs/composables/index.js",
-      "types": "./dist/types/composables/index.d.ts"
+      "require": "./dist/cjs/composables/index.js"
     },
     "./composables/*": {
+      "types": "./dist/types/composables/*.d.ts",
       "import": "./dist/esm/composables/*.js",
-      "require": "./dist/cjs/composables/*.js",
-      "types": "./dist/types/composables/*.d.ts"
+      "require": "./dist/cjs/composables/*.js"
     },
     "./controls": {
+      "types": "./dist/types/components/controls/index.d.ts",
       "import": "./dist/esm/controls/index.js",
-      "require": "./dist/cjs/controls/index.js",
-      "types": "./dist/types/components/controls/index.d.ts"
+      "require": "./dist/cjs/controls/index.js"
     },
     "./controls/*": {
+      "types": "./dist/types/components/controls/*.d.ts",
       "import": "./dist/esm/controls/*.js",
-      "require": "./dist/cjs/controls/*.js",
-      "types": "./dist/types/components/controls/*.d.ts"
+      "require": "./dist/cjs/controls/*.js"
     },
     "./geometries": {
+      "types": "./dist/types/components/geometries/index.d.ts",
       "import": "./dist/esm/geometries/index.js",
-      "require": "./dist/cjs/geometries/index.js",
-      "types": "./dist/types/components/geometries/index.d.ts"
+      "require": "./dist/cjs/geometries/index.js"
     },
     "./geometries/*": {
+      "types": "./dist/types/components/geometries/*.d.ts",
       "import": "./dist/esm/geometries/*.js",
-      "require": "./dist/cjs/geometries/*.js",
-      "types": "./dist/types/components/geometries/*.d.ts"
+      "require": "./dist/cjs/geometries/*.js"
     },
     "./helpers": {
+      "types": "./dist/types/helpers/index.d.ts",
       "import": "./dist/esm/helpers/index.js",
-      "require": "./dist/cjs/helpers/index.js",
-      "types": "./dist/types/helpers/index.d.ts"
+      "require": "./dist/cjs/helpers/index.js"
     },
     "./helpers/*": {
+      "types": "./dist/types/helpers/*.d.ts",
       "import": "./dist/esm/helpers/*.js",
-      "require": "./dist/cjs/helpers/*.js",
-      "types": "./dist/types/helpers/*.d.ts"
+      "require": "./dist/cjs/helpers/*.js"
     },
     "./interactions": {
+      "types": "./dist/types/components/interactions/index.d.ts",
       "import": "./dist/esm/interactions/index.js",
-      "require": "./dist/cjs/interactions/index.js",
-      "types": "./dist/types/components/interactions/index.d.ts"
+      "require": "./dist/cjs/interactions/index.js"
     },
     "./interactions/*": {
+      "types": "./dist/types/components/interactions/*.d.ts",
       "import": "./dist/esm/interactions/*.js",
-      "require": "./dist/cjs/interactions/*.js",
-      "types": "./dist/types/components/interactions/*.d.ts"
+      "require": "./dist/cjs/interactions/*.js"
     },
     "./layers": {
+      "types": "./dist/types/components/layers/index.d.ts",
       "import": "./dist/esm/layers/index.js",
-      "require": "./dist/cjs/layers/index.js",
-      "types": "./dist/types/components/layers/index.d.ts"
+      "require": "./dist/cjs/layers/index.js"
     },
     "./layers/*": {
+      "types": "./dist/types/components/layers/*.d.ts",
       "import": "./dist/esm/layers/*.js",
-      "require": "./dist/cjs/layers/*.js",
-      "types": "./dist/types/components/layers/*.d.ts"
+      "require": "./dist/cjs/layers/*.js"
     },
     "./map": {
+      "types": "./dist/types/components/map/index.d.ts",
       "import": "./dist/esm/map/index.js",
-      "require": "./dist/cjs/map/index.js",
-      "types": "./dist/types/components/map/index.d.ts"
+      "require": "./dist/cjs/map/index.js"
     },
     "./map/*": {
+      "types": "./dist/types/components/map/*.d.ts",
       "import": "./dist/esm/map/*.js",
-      "require": "./dist/cjs/map/*.js",
-      "types": "./dist/types/components/map/*.d.ts"
+      "require": "./dist/cjs/map/*.js"
     },
     "./styles": {
+      "types": "./dist/types/components/styles/index.d.ts",
       "import": "./dist/esm/styles/index.js",
-      "require": "./dist/cjs/styles/index.js",
-      "types": "./dist/types/components/styles/index.d.ts"
+      "require": "./dist/cjs/styles/index.js"
     },
     "./styles/*": {
+      "types": "./dist/types/components/styles/*.d.ts",
       "import": "./dist/esm/styles/*.js",
-      "require": "./dist/cjs/styles/*.js",
-      "types": "./dist/types/components/styles/*.d.ts"
+      "require": "./dist/cjs/styles/*.js"
     },
     "./sources": {
+      "types": "./dist/types/components/sources/index.d.ts",
       "import": "./dist/esm/sources/index.js",
-      "require": "./dist/cjs/sources/index.js",
-      "types": "./dist/types/components/sources/index.d.ts"
+      "require": "./dist/cjs/sources/index.js"
     },
     "./sources/*": {
+      "types": "./dist/types/components/sources/*.d.ts",
       "import": "./dist/esm/sources/*.js",
-      "require": "./dist/cjs/sources/*.js",
-      "types": "./dist/types/components/sources/*.d.ts"
+      "require": "./dist/cjs/sources/*.js"
     },
     "./*": {
+      "types": "./dist/types/*.d.ts",
       "import": "./dist/esm/*.js",
-      "require": "./dist/cjs/*.js",
-      "types": "./dist/types/*.d.ts"
+      "require": "./dist/cjs/*.js"
     },
     "./vue3-openlayers.css": {
       "import": "./dist/styles.css",
