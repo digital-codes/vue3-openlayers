@@ -1,5 +1,12 @@
 # Changelog
 
+## [12.1.1](https://github.com/MelihAltintas/vue3-openlayers/compare/v12.1.0...v12.1.1) (2025-09-06)
+
+
+### Bug Fixes
+
+* correctly reference styles ([11ae92d](https://github.com/MelihAltintas/vue3-openlayers/commit/11ae92d5a8f8bc2daa9ad8d323f868f941fc777e)), closes [#440](https://github.com/MelihAltintas/vue3-openlayers/issues/440)
+
 # [12.1.0](https://github.com/MelihAltintas/vue3-openlayers/compare/v12.0.2...v12.1.0) (2025-08-31)
 
 
