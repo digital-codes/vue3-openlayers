@@ -77,7 +77,7 @@
       </ol-tile-layer>
     </ol-overview-map-control>
 
-    <ol-scaleline-control />
+    <ol-scale-line-control />
     <ol-rotate-control />
     <ol-zoom-control />
     <ol-zoom-slider-control />
@@ -230,7 +230,7 @@
       <ol-source-vector>
         <ol-feature ref="animationPath">
           <ol-geom-line-string :coordinates="path"></ol-geom-line-string>
-          <ol-style-flowline
+          <ol-style-flow-line
             color="red"
             color2="yellow"
             :width="10"

@@ -15,7 +15,7 @@
       <ol-source-osm />
     </ol-tile-layer>
 
-    <ol-interaction-dragrotate />
+    <ol-interaction-drag-rotate />
   </ol-map>
 </template>
 

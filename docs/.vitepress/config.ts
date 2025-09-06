@@ -255,7 +255,7 @@ export const config: UserConfig = {
                 link: "/componentsguide/mapcontrols/search/",
               },
               {
-                text: "ol-scaleline-control",
+                text: "ol-scale-line-control",
                 link: "/componentsguide/mapcontrols/scaleline/",
               },
               {
@@ -339,7 +339,7 @@ export const config: UserConfig = {
                 link: "/componentsguide/styles/fill/",
               },
               {
-                text: "ol-style-flowline",
+                text: "ol-style-flow-line",
                 link: "/componentsguide/styles/flowline/",
               },
               {
@@ -369,15 +369,15 @@ export const config: UserConfig = {
                 link: "/componentsguide/interactions/draw/",
               },
               {
-                text: "ol-interaction-dragbox",
+                text: "ol-interaction-drag-box",
                 link: "/componentsguide/interactions/dragbox/",
               },
               {
-                text: "ol-interaction-dragrotate",
+                text: "ol-interaction-drag-rotate",
                 link: "/componentsguide/interactions/dragrotate/",
               },
               {
-                text: "ol-interaction-dragrotatezoom",
+                text: "ol-interaction-drag-rotate-and-zoom",
                 link: "/componentsguide/interactions/dragrotatezoom/",
               },
               {

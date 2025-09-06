@@ -37,13 +37,13 @@
       </ol-source-vector>
     </ol-vector-layer>
 
-    <ol-interaction-dragbox
+    <ol-interaction-drag-box
       :condition="shiftKeyOnly"
       @boxstart="log('boxstart', $event)"
       @boxdrag="log('boxdrag', $event)"
       @boxend="log('boxend', $event)"
       @boxcancel="log('boxcancel', $event)"
-    ></ol-interaction-dragbox>
+    ></ol-interaction-drag-box>
   </ol-map>
 </template>
 

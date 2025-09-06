@@ -32,7 +32,7 @@ test.describe("ol-style-fill", () => {
   });
 });
 
-test.describe("ol-style-flowline", () => {
+test.describe("ol-style-flow-line", () => {
   test("should render", async ({ page }) => {
     const map = new MapPage(page);
     await map.goto("/componentsguide/styles/flowline/");

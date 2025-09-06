@@ -143,7 +143,7 @@ test.describe("ol-search-control", () => {
   });
 });
 
-test.describe("ol-scaleline-control", () => {
+test.describe("ol-scale-line-control", () => {
   test("should render as ScaleLine", async ({ page }) => {
     const map = new MapPage(page);
     await map.goto("/componentsguide/mapcontrols/scaleline/");

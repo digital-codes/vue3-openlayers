@@ -1,4 +1,4 @@
-# ol-style-flowline
+# ol-style-flow-line
 
 > Style of a flowline in a vector layer
 
@@ -19,9 +19,9 @@ import FlowLineDemo from "@demos/FlowLineDemo.vue"
 
 ## Usage
 
-| Plugin Usage          |      Explicit Import       |
-| --------------------- | :------------------------: |
-| `<ol-style-flowline>` | `<Styles.OlStyleFlowline>` |
+| Plugin Usage           |      Explicit Import       |
+| ---------------------- | :------------------------: |
+| `<ol-style-flow-line>` | `<Styles.OlStyleFlowline>` |
 
 ::: code-group
 

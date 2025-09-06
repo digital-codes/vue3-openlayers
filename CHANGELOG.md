@@ -608,7 +608,7 @@ Please check your app carefully when updating to the new major version.
 
 ### Features
 
-* **ol-interaction-dragbox:** add DragBox component wrapper ([3eb1fff](https://github.com/MelihAltintas/vue3-openlayers/commit/3eb1fff345b81c2990e5aa84eaedea3b39164e19)), closes [#307](https://github.com/MelihAltintas/vue3-openlayers/issues/307)
+* **ol-interaction-drag-box:** add DragBox component wrapper ([3eb1fff](https://github.com/MelihAltintas/vue3-openlayers/commit/3eb1fff345b81c2990e5aa84eaedea3b39164e19)), closes [#307](https://github.com/MelihAltintas/vue3-openlayers/issues/307)
 * **ol-vector-layer:** add `background` property ([f51cd25](https://github.com/MelihAltintas/vue3-openlayers/commit/f51cd25d93820459209892d817c34be73094faf1))
 
 ## [6.2.1](https://github.com/MelihAltintas/vue3-openlayers/compare/v6.2.0...v6.2.1) (2024-03-25)

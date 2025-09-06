@@ -40,7 +40,7 @@ test.describe("ol-overlay", () => {
   });
 });
 
-test.describe("ol-geolocation", () => {
+test.describe("ol-geo-location", () => {
   test("should render", async ({ page }) => {
     const map = new MapPage(page);
     await map.goto("/componentsguide/geolocation/");

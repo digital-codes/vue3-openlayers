@@ -70,7 +70,7 @@ test.describe("ol-interaction-draw", () => {
   });
 });
 
-test.describe("ol-interaction-dragbox", () => {
+test.describe("ol-interaction-drag-box", () => {
   test("should drag on the map", async ({ page }) => {
     const map = new MapPage(page);
     await map.goto("/componentsguide/interactions/dragbox/");
@@ -81,7 +81,7 @@ test.describe("ol-interaction-dragbox", () => {
   });
 });
 
-test.describe("ol-interaction-dragrotate", () => {
+test.describe("ol-interaction-drag-rotate", () => {
   test("should rotate the map view by dragging on it with pressed modifiers", async ({
     page,
   }) => {
@@ -94,7 +94,7 @@ test.describe("ol-interaction-dragrotate", () => {
   });
 });
 
-test.describe("ol-interaction-dragrotatezoom", () => {
+test.describe("ol-interaction-drag-rotate-and-zoom", () => {
   test("should rotate the map view and zoom by dragging on it with pressed modifiers", async ({
     page,
   }) => {

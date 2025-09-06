@@ -15,7 +15,7 @@
       <ol-source-vector>
         <ol-feature ref="animationPath">
           <ol-geom-line-string :coordinates="path"></ol-geom-line-string>
-          <ol-style-flowline
+          <ol-style-flow-line
             color="red"
             color2="yellow"
             :width="10"

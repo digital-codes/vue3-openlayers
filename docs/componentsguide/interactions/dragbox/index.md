@@ -1,4 +1,4 @@
-# ol-interaction-dragbox
+# ol-interaction-drag-box
 
 > Allows the user to draw a vector box by clicking and dragging on the map,
 > normally combined with a _condition_ that limits it to when the `shift` or other key is held down.
@@ -21,9 +21,9 @@ import VectorSourceDemo1 from "@demos/VectorSourceDemo1.vue"
 
 ## Usage
 
-| Plugin Usage               |            Explicit Import            |
-| -------------------------- | :-----------------------------------: |
-| `<ol-interaction-dragbox>` | `<Interactions.OlInteractionDragbox>` |
+| Plugin Usage                |            Explicit Import            |
+| --------------------------- | :-----------------------------------: |
+| `<ol-interaction-drag-box>` | `<Interactions.OlInteractionDragbox>` |
 
 ::: code-group
 
@@ -50,9 +50,9 @@ You have access to all Events from the underlying interaction.
 Check out [the official OpenLayers docs](https://openlayers.org/en/latest/apidoc/module-ol_interaction_DragBox-DragBox.html) to see the available events tht will be fired.
 
 ```html
-<ol-interaction-dragbox @error="handleEvent">
+<ol-interaction-drag-box @error="handleEvent">
   <!-- ... -->
-</ol-interaction-dragbox>
+</ol-interaction-drag-box>
 ```
 
 ## Methods
@@ -65,7 +65,7 @@ To access the source, you can use a `ref()` as shown below:
 ```vue
 <template>
   <!-- ... -->
-  <ol-interaction-dragbox ref="dragboxRef" @error="handleEvent" />
+  <ol-interaction-drag-box ref="dragboxRef" @error="handleEvent" />
   <!-- ... -->
 </template>
 

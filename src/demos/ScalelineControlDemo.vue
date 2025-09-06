@@ -10,7 +10,7 @@
     <ol-tile-layer>
       <ol-source-osm />
     </ol-tile-layer>
-    <ol-scaleline-control :bar="showAsBar" />
+    <ol-scale-line-control :bar="showAsBar" />
   </ol-map>
 </template>
 

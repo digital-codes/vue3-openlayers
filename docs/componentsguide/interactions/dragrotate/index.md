@@ -1,4 +1,4 @@
-# ol-interaction-dragrotate
+# ol-interaction-drag-rotate
 
 > Rotate the map by clicking and dragging on the map, normally combined with an `ol/events/condition` that limits it to when the `alt` and `shift` keys are held down.
 
@@ -20,9 +20,9 @@ import DragRotateDemo from "@demos/DragRotateDemo.vue"
 
 ## Usage
 
-| Plugin Usage                  |             Explicit Import              |
-| ----------------------------- | :--------------------------------------: |
-| `<ol-interaction-dragrotate>` | `<Interactions.OlInteractionDragrotate>` |
+| Plugin Usage                   |             Explicit Import              |
+| ------------------------------ | :--------------------------------------: |
+| `<ol-interaction-drag-rotate>` | `<Interactions.OlInteractionDragrotate>` |
 
 ::: code-group
 

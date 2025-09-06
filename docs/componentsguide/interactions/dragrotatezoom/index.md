@@ -1,4 +1,4 @@
-# ol-interaction-dragrotatezoom
+# ol-interaction-drag-rotate-and-zoom
 
 > Zoom and rotate the map by clicking and dragging on the map. By default, this interaction is limited to when the `shift` key is held down.
 
@@ -20,9 +20,9 @@ import DragRotateZoomDemo from "@demos/DragRotateZoomDemo.vue"
 
 ## Usage
 
-| Plugin Usage                      |               Explicit Import                |
-| --------------------------------- | :------------------------------------------: |
-| `<ol-interaction-dragrotatezoom>` | `<Interactions.OlInteractionDragrotatezoom>` |
+| Plugin Usage                            |               Explicit Import                |
+| --------------------------------------- | :------------------------------------------: |
+| `<ol-interaction-drag-rotate-and-zoom>` | `<Interactions.OlInteractionDragrotatezoom>` |
 
 ::: code-group
 

@@ -1,4 +1,4 @@
-# ol-scaleline-control
+# ol-scale-line-control
 
 > A Scale Line control for OpenLayers.
 
@@ -20,9 +20,9 @@ import ScalelineControlDemo from "@demos/ScalelineControlDemo.vue"
 
 ## Usage
 
-| Plugin Usage             |          Explicit Import           |
-| ------------------------ | :--------------------------------: |
-| `<ol-scaleline-control>` | `<MapControls.OlScalelineControl>` |
+| Plugin Usage              |          Explicit Import           |
+| ------------------------- | :--------------------------------: |
+| `<ol-scale-line-control>` | `<MapControls.OlScalelineControl>` |
 
 ::: code-group
 

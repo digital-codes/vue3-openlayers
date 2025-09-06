@@ -16,7 +16,7 @@ import type { Vue3OpenlayersGlobalOptions } from "@/types";
 function install(app: App, options?: Vue3OpenlayersGlobalOptions) {
   app.component("OlInteractionClusterSelect", OlInteractionClusterSelect);
   app.component("OlInteractionDragBox", OlInteractionDragBox);
-  app.component("OlInteractionDragAndRotate", OlInteractionDragRotate);
+  app.component("OlInteractionDragRotate", OlInteractionDragRotate);
   app.component(
     "OlInteractionDragRotateAndZoom",
     OlInteractionDragRotateAndZoom,
