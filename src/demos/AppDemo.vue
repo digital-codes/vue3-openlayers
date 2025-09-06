@@ -70,7 +70,7 @@
     </ol-control-bar>
 
     <ol-mouse-position-control />
-    <ol-fullscreen-control />
+    <ol-full-screen-control />
     <ol-overview-map-control>
       <ol-tile-layer>
         <ol-source-osm />

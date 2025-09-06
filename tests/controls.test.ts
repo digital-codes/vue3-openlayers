@@ -36,7 +36,7 @@ test.describe("ol-context-menu-control", () => {
   });
 });
 
-test.describe("ol-fullscreen-control", () => {
+test.describe("ol-full-screen-control", () => {
   test("should render", async ({ page }) => {
     const map = new MapPage(page);
     await map.goto("/componentsguide/mapcontrols/fullscreen/");

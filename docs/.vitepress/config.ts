@@ -219,7 +219,7 @@ export const config: UserConfig = {
                 link: "/componentsguide/mapcontrols/contextmenu/",
               },
               {
-                text: "ol-fullscreen-control",
+                text: "ol-full-screen-control",
                 link: "/componentsguide/mapcontrols/fullscreen/",
               },
               {

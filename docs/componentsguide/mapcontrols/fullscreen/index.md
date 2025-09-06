@@ -1,4 +1,4 @@
-# ol-fullscreen-control
+# ol-full-screen-control
 
 > A Fullscreen control for OpenLayers.
 
@@ -7,10 +7,10 @@
 ## Demo
 
 <script setup lang="ts">
-import FullscreenControlDemo from "@demos/FullscreenControlDemo.vue"
+import FullScreenControlDemo from "@demos/FullScreenControlDemo.vue"
 </script>
 <ClientOnly>
-<FullscreenControlDemo />
+<FullScreenControlDemo />
 </ClientOnly>
 
 ## Setup
@@ -19,13 +19,13 @@ import FullscreenControlDemo from "@demos/FullscreenControlDemo.vue"
 
 ## Usage
 
-| Plugin Usage              |           Explicit Import           |
-| ------------------------- | :---------------------------------: |
-| `<ol-fullscreen-control>` | `<MapControls.OlFullScreenControl>` |
+| Plugin Usage               |           Explicit Import           |
+| -------------------------- | :---------------------------------: |
+| `<ol-full-screen-control>` | `<MapControls.OlFullScreenControl>` |
 
 ::: code-group
 
-<<< ../../../../src/demos/FullscreenControlDemo.vue
+<<< ../../../../src/demos/FullScreenControlDemo.vue
 
 :::
 
