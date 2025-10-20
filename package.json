@@ -206,7 +206,7 @@
     "not dead"
   ],
   "devDependencies": {
-    "@playwright/test": "1.55.0",
+    "@playwright/test": "1.56.1",
     "@release-it/conventional-changelog": "^10.0.1",
     "@types/file-saver": "^2.0.7",
     "@types/node": "^22.18.0",
