@@ -1,5 +1,12 @@
 # Changelog
 
+# [12.2.0](https://github.com/MelihAltintas/vue3-openlayers/compare/v12.1.1...v12.2.0) (2025-11-12)
+
+
+### Features
+
+* **ol-interaction-synchronize:** Add synchronize interaction ([#441](https://github.com/MelihAltintas/vue3-openlayers/issues/441)) ([7a77e99](https://github.com/MelihAltintas/vue3-openlayers/commit/7a77e99594fc9762d218faeb69797a8fa634d531))
+
 ## [12.1.1](https://github.com/MelihAltintas/vue3-openlayers/compare/v12.1.0...v12.1.1) (2025-09-06)
 
 
