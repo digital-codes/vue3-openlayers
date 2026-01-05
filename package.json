@@ -187,7 +187,7 @@
     "@turf/helpers": "^7.2.0",
     "dom-to-image-more": "^3.7.1",
     "file-saver": "^2.0.5",
-    "jspdf": "^3.0.2",
+    "jspdf": "^4.0.0",
     "ol": "^10.6.0",
     "ol-contextmenu": "^5.5.0",
     "ol-ext": "^4.0.34",
